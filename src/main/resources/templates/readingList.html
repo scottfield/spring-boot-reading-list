@@ -11,6 +11,7 @@
             <span th:text="${book.title}">Title</span> by
             <span th:text="${book.author}">Author</span>
             (ISBN: <span th:text="${book.isbn}">ISBN</span>)
+            <a th:href="'http://www.baidu.com?id='+${amazonID}">link</a>
         </dt>
         <dd class="bookDescription">
 <span th:if="${book.description}"
